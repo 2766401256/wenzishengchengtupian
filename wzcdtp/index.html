@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="字体生成,生成图片工具,小工具,淘宝商家工具">
+    <meta name="descripttion" content="一个在线的字体生成工具，">
+    <meta name="author" content="策策">
+    <title>字体生成图片工具</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+                <h1>字体生成图片工具</h1>
+                <p>Hello，欢迎使用，我是在线字体生成图片工具，经常用于生成钢笔字、书法字图片等等。</p>
+        </header>
+        <hr/>
+        <a href="bangzhu.html" id="sybz">使用帮助</a>
+        <div id="content">
+            <form action="">
+            <ul id="sz">
+                <li><h3>标题：</h3><input type="text" id="title" value="" placeholder="文章标题"></li>
+                <li style="margin:0 15px;"><h3>正文字号：</h3><select id="wordsize">
+                    <option value="24">24</option>
+                    <option value="26">26</option>
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="38">38</option>
+                    <option value="40">40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+                    <option value="46">46</option>
+                    <option value="48">48</option>
+                    <option value="50">50</option>
+                    <option value="52">52</option>
+                    <option value="54">54</option>
+                    <option value="56">56</option>
+                    <option value="58">58</option>
+                    <option value="60">60</option>
+                    <option value="62">62</option>
+                    <option value="64">64</option>
+                    <option value="66">66</option>
+                    <option value="68">68</option>
+                    <option value="70">70</option>
+                    <option value="72">72</option>
+                  </select></li>
+                <li><h3>需转换字体：</h3><select id="font">
+                      <option value="gb">钢笔字体</option>
+                      <option value="mb">毛笔字体</option>
+                  </select></li>
+            </ul>
+        </form>
+            <div id="dlbox">
+            <textarea class="paragraph" placeholder="段落1"></textarea>
+            <textarea class="paragraph" placeholder="段落2"></textarea>
+            </div>
+            <div id="paph" onClick="dl()" title="段落不够？增加段落">+</div>
+            <div id="download"><a href="javascript:sc()">生成预览</a>
+            </div>
+            <div style="position:relative;margin:15px auto 0 auto;">
+                <a class="down" href="javascript:;" download="shuxietupian" id="xz">生成图片并且下载</a>
+                <div id="img">
+                    
+                    <h4 id="wzbt"></h4>
+                    <p class="tupianhang"></p>
+                    <p class="tupianhang"></p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <footer>Copyright ©2018-2019 CeceBlog, All Rights Reserved</footer>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
