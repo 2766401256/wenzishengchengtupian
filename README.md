@@ -13,7 +13,6 @@ html2canvas(document.body).then(function(canvas) {
 
 以上便是html2canvas的使用指南，开拓自己使用想想还能做些什么。
 
-我做的工具地址：[https://cecebk.cn/paging/wzcdtp/index.html](https://cecebk.cn/paging/wzcdtp/index.html)
 
 我做的这个小工具支持字体变换，字号设置，标题字号与行高按正文字号等比例放大缩小，还有在线预览效果：
 
